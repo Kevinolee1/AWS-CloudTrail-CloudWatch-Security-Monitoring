@@ -10,7 +10,7 @@ CloudTrail provides auditing capabilities for AWS account activity, including AP
 
 This step establishes the starting point for configuring AWS security monitoring and investigating account activity.
 
-![AWS CloudTrail Console](screenshots/01-aws-cloudtrail-console.png)
+![AWS CloudTrail Console](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/62b3771255f3e1b569932e542f62929a8064fffd/Screenshot%202026-10-23%20013332.png)
 
 *Figure 1: AWS CloudTrail console opened to begin the security monitoring lab.*
 
