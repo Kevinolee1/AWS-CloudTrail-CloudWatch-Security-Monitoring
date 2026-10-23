@@ -22,7 +22,7 @@ Reviewed IAM sign-in activity, MFA checks, EC2 instance modifications, and insta
 
 Verified that CloudTrail records event names, timestamps, user identities, event sources, and affected resources for security auditing and incident investigations.
 
-![CloudTrail Event History](screenshots/02-cloudtrail-event-history.png)
+![CloudTrail Event History](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/c9188a1d667e60fae339c3dd2e9018b18a78f324/Screenshot%202026-10-23%20014446.png)
 
 *Figure 2: AWS CloudTrail Event History displaying account activity and administrative API events.*
 
