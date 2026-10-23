@@ -74,7 +74,7 @@ Examined the request and response elements to confirm that the instance transiti
 
 Demonstrated how CloudTrail JSON records support security investigations, administrative accountability, and verification of infrastructure changes.
 
-![EC2 Termination JSON Analysis](screenshots/05-cloudtrail-termination-json-analysis.png)
+![EC2 Termination JSON Analysis](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/6fac479581d457ce82d41175c9ec8298398c68e6/Screenshot%202026-10-23%20020219.png)
 
 *Figure 5: AWS CloudTrail JSON event confirming an MFA-authenticated EC2 termination and the resulting instance state.*
 
