@@ -56,7 +56,7 @@ Reviewed the IAM identity, event timestamp, source IP address, AWS Region, and a
 
 Verified that CloudTrail recorded the administrative API request and associated resource, demonstrating how AWS audit logs support infrastructure change tracking, accountability, and security investigations.
 
-![CloudTrail EC2 Termination Event](screenshots/04-cloudtrail-ec2-termination-event.png)
+![CloudTrail EC2 Termination Event](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/2c86d938a79e1cc655644326aa7688c9aaa52e84/Screenshot%202026-10-23%20015655.png)
 
 *Figure 4: AWS CloudTrail TerminateInstances event showing the IAM identity and affected EC2 resource.*
 
