@@ -38,7 +38,7 @@ The login result and MFA status require further verification using the event's J
 
 ![CloudTrail Console Login Event](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/3021e1367811decfa9aee2a5fb944766d4a16701/Screenshot%202026-10-23%20014710.png)
 
-*Figure 3: AWS CloudTrail ConsoleLogin event displaying IAM authentication details and source IP information.*
+*Figure 3A: AWS CloudTrail ConsoleLogin event displaying IAM authentication details and source IP information.*
 
 ### Step 3B — Investigate AWS Console Login Activity
 
@@ -50,7 +50,7 @@ Confirmed that the event was categorized as a management event and that the conn
 
 ![CloudTrail Console Login Event](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/2c86d938a79e1cc655644326aa7688c9aaa52e84/Screenshot%202026-10-23%20015655.pn)
 
-*Figure 3: AWS CloudTrail ConsoleLogin event showing authentication details, successful login, and MFA verification.*
+*Figure 3B: AWS CloudTrail ConsoleLogin event showing authentication details, successful login, and MFA verification.*
 
 ### Step 4 — Investigate EC2 Instance Termination
 
