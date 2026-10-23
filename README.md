@@ -48,7 +48,9 @@ Verified that the authentication was successful and multi-factor authentication 
 
 Confirmed that the event was categorized as a management event and that the connection used TLS 1.3.
 
-![Investigate EC2 Instance Termination](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/2c86d938a79e1cc655644326aa7688c9aaa52e84/Screenshot%202026-10-23%20015655.pn)
+![CloudTrail Console Login Event](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/2c86d938a79e1cc655644326aa7688c9aaa52e84/Screenshot%202026-10-23%20015655.pn)
+
+*Figure 3: AWS CloudTrail ConsoleLogin event showing authentication details, successful login, and MFA verification.*
 
 ### Step 4 — Investigate EC2 Instance Termination
 
@@ -78,6 +80,3 @@ Demonstrated how CloudTrail JSON records support security investigations, admini
 
 Demonstrated how CloudTrail authentication logs support identity monitoring, security auditing, and incident investigations.
 
-![CloudTrail Console Login Event](screenshots/03-cloudtrail-console-login-event.png)
-
-*Figure 3: AWS CloudTrail ConsoleLogin event showing authentication details, successful login, and MFA verification.*
