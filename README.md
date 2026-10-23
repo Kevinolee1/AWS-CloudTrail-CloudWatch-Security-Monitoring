@@ -36,7 +36,7 @@ Identified how CloudTrail provides authentication records that support security 
 
 The login result and MFA status require further verification using the event's JSON record.
 
-![CloudTrail Console Login Event](screenshots/03-cloudtrail-console-login-event.png)
+![CloudTrail Console Login Event](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/3021e1367811decfa9aee2a5fb944766d4a16701/Screenshot%202026-10-23%20014710.png)
 
 *Figure 3: AWS CloudTrail ConsoleLogin event displaying IAM authentication details and source IP information.*
 
