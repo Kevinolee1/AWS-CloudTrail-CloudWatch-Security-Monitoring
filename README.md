@@ -48,6 +48,8 @@ Verified that the authentication was successful and multi-factor authentication 
 
 Confirmed that the event was categorized as a management event and that the connection used TLS 1.3.
 
+![Image alt](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/2c86d938a79e1cc655644326aa7688c9aaa52e84/Screenshot%202026-10-23%20015655.pn)
+
 ### Step 4 — Investigate EC2 Instance Termination
 
 Investigated a TerminateInstances management event using AWS CloudTrail Event History.
@@ -56,7 +58,7 @@ Reviewed the IAM identity, event timestamp, source IP address, AWS Region, and a
 
 Verified that CloudTrail recorded the administrative API request and associated resource, demonstrating how AWS audit logs support infrastructure change tracking, accountability, and security investigations.
 
-![CloudTrail EC2 Termination Event](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/2c86d938a79e1cc655644326aa7688c9aaa52e84/Screenshot%202026-10-23%20015655.png)
+![CloudTrail EC2 Termination Event]()
 
 *Figure 4: AWS CloudTrail TerminateInstances event showing the IAM identity and affected EC2 resource.*
 
