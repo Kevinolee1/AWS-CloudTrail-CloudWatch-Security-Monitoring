@@ -127,7 +127,7 @@ Configured the trail to capture read and write management events, deliver log fi
 
 The AWS CloudTrail console confirmed that the trail was successfully created.
 
-![CloudTrail trail successfully created](screenshots/09-cloudtrail-trail-created.png)
+![CloudTrail trail successfully created](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/2d9f3dc97d0e13173755130dd84903cad5a0b7bb/Screenshot%202026-10-23%20140249.png)
 
 *Figure 9: Successfully created the multi-region CloudTrail trail with an Amazon S3 log destination.*
   
