@@ -163,7 +163,7 @@ Extracted event timestamps, API operation names, AWS service sources, and region
 
 Confirmed that the log contains structured AWS API activity records suitable for security investigations and auditing.
 
-![CloudTrail JSON event analysis in PowerShell](screenshots/12-cloudtrail-json-event-analysis.png)
+![CloudTrail JSON event analysis in PowerShell](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/9e1cf28730e9076204348ebae4f6bdaee42a6eb7/Screenshot%202026-10-23%20231026.png)
 
 *Figure 12: PowerShell displaying CloudTrail API event timestamps, operation names, service sources, and AWS regions.*
   
