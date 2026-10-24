@@ -139,7 +139,7 @@ Confirmed that the trail is configured for multi-region monitoring with log file
 
 At the time of verification, the console had not yet reported a log file delivery timestamp. S3 log delivery will be verified separately.
 
-![CloudTrail logging status](screenshots/10-cloudtrail-logging-status.png)
+![CloudTrail logging status](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/e6b827cdc8862f35d36a25a93a90533b8aec9db6/Screenshot%202026-10-23%20140456.png)
 
 *Figure 10: CloudTrail trail details showing active logging status and the configured S3 log destination.*
   
