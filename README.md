@@ -203,3 +203,53 @@ Confirmed that no CloudWatch log groups were present. This established a baselin
 ![CloudWatch log groups review](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/6bd09a31d924113a9c5912b2738de707b0b75931/Screenshot%202026-10-24%20140213.png)
 
 *Figure 15: CloudWatch Log Management showing zero existing log groups before CloudTrail integration.*
+
+### Step 16 — Create a CloudWatch Security Monitoring Log Group
+
+Created a dedicated Amazon CloudWatch Logs group named `/aws/cloudtrail/CloudSecurity-Monitoring` to support centralized monitoring of AWS CloudTrail management events.
+
+Configured the Standard log class to support security metric filters and established a seven-day retention policy to help manage log storage costs.
+
+Verified that the log group was successfully created with deletion protection disabled and no metric filters configured.
+
+![CloudWatch security log group](screenshots/16-cloudwatch-security-log-group-created.png)
+
+*Figure 16: CloudWatch security monitoring log group successfully created with Standard log class and seven-day retention.*
+
+### Step 17 — Integrate AWS CloudTrail with CloudWatch Logs
+
+Configured the existing `CloudSecurity-Monitoring-Trail` to deliver AWS management events to the CloudWatch log group `/aws/cloudtrail/CloudSecurity-Monitoring`.
+
+Created a dedicated IAM service role named `CloudSecurity-CloudTrail-CloudWatch-Role` with permissions to create CloudWatch log streams and publish log events.
+
+Verified that the CloudTrail configuration displays the associated CloudWatch log group and IAM role while S3 log delivery and trail logging remain active.
+
+![CloudTrail CloudWatch integration](screenshots/17-cloudtrail-cloudwatch-integration.png)
+
+*Figure 17: CloudTrail successfully configured with a dedicated CloudWatch Logs group and IAM service role.*
+
+### Step 18 — Verify CloudTrail Log Delivery in CloudWatch
+
+Opened the CloudWatch log group `/aws/cloudtrail/CloudSecurity-Monitoring` and verified that three CloudTrail log streams were present.
+
+Inspected a log stream containing 38 loaded events and reviewed JSON records for AWS API activity, IAM identity, MFA authentication, event sources, timestamps, and management operations.
+
+Identified read-only API activity, including `DescribeLogGroups`, `DescribeAlarms`, and `DescribeRegions`, confirming that CloudTrail management events were successfully delivered to CloudWatch Logs.
+
+![CloudWatch CloudTrail log events](screenshots/18-cloudwatch-cloudtrail-log-events.png)
+
+*Figure 18: CloudWatch Logs displaying CloudTrail management events with IAM identity and API activity details.*
+
+### Step 19 — Configure Failed Console Login Detection
+
+Created a CloudWatch Logs metric filter named `CloudSecurity-FailedConsoleLogin-Filter` to identify unsuccessful AWS Management Console authentication attempts.
+
+Configured the filter to inspect CloudTrail JSON events for `ConsoleLogin` activity with a `Failure` response.
+
+Assigned matching events to the custom CloudWatch metric `CloudSecurity/Authentication / FailedConsoleLoginCount`, using a metric value of `1`, a default value of `0`, and the `Count` unit.
+
+Verified that the metric filter was successfully created and associated with the CloudTrail monitoring log group.
+
+![CloudWatch failed login metric filter](screenshots/19-cloudwatch-failed-login-metric-filter.png)
+
+*Figure 19: CloudWatch metric filter configured to detect and count failed AWS Console login attempts.*
