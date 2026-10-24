@@ -143,3 +143,53 @@ At the time of verification, the console had not yet reported a log file deliver
 
 *Figure 10: CloudTrail trail details showing active logging status and the configured S3 log destination.*
   
+### Step 11 — Verify CloudTrail Log Delivery to Amazon S3
+
+Navigated to the Amazon S3 bucket associated with `CloudSecurity-Monitoring-Trail` and inspected the regional CloudTrail log directory.
+
+Located 33 compressed `.json.gz` log files in the `us-east-1/2026/10/23/` directory, confirming that CloudTrail successfully delivered management-event logs to Amazon S3.
+
+Verified the log file naming convention, delivery timestamps, and S3 Standard storage class. The bucket also contains a `CloudTrail-Digest/` directory associated with log file validation.
+
+![CloudTrail logs delivered to Amazon S3](screenshots/11-cloudtrail-s3-log-delivery.png)
+
+*Figure 11: Amazon S3 displaying 33 compressed CloudTrail log files delivered to the regional log directory.*
+  
+### Step 12 — Analyze CloudTrail JSON Event Logs
+
+Downloaded a CloudTrail log file from Amazon S3 and used Windows PowerShell to parse its JSON records.
+
+Extracted event timestamps, API operation names, AWS service sources, and regions to examine recorded management activity. Identified five events involving Amazon S3 bucket creation and policy configuration, CloudTrail Insights settings retrieval, and AWS STS role assumption.
+
+Confirmed that the log contains structured AWS API activity records suitable for security investigations and auditing.
+
+![CloudTrail JSON event analysis in PowerShell](screenshots/12-cloudtrail-json-event-analysis.png)
+
+*Figure 12: PowerShell displaying CloudTrail API event timestamps, operation names, service sources, and AWS regions.*
+  
+### Step 13 — Investigate an AWS S3 API Event
+
+Investigated a `CreateBucket` management event from an Amazon S3 CloudTrail log using Windows PowerShell.
+
+Parsed the event's `userIdentity`, `sessionContext`, and `requestParameters` fields to identify the initiating IAM user, MFA authentication status, and affected S3 resource.
+
+Confirmed that the `cloud-lab-admin` IAM user initiated the operation through an MFA-authenticated session. The target resource matched the S3 bucket created for CloudTrail log storage.
+
+The findings were consistent with the authorized CloudTrail setup activity. No suspicious behavior was established from this event.
+
+![CloudTrail S3 API event investigation](screenshots/13-cloudtrail-s3-api-investigation.png)
+
+*Figure 13: PowerShell investigation of an S3 CreateBucket event, identifying the IAM user, MFA status, and affected resource.*
+  
+### Step 14 — Access Amazon CloudWatch
+
+Opened the Amazon CloudWatch console in the `us-east-1` region to begin configuring security monitoring for the AWS environment.
+
+Reviewed the CloudWatch overview and identified the available logging, metrics, dashboards, and alarm capabilities. Confirmed that no CloudWatch alarms were configured at the time of the initial review.
+
+This establishes the starting point for integrating CloudTrail management events with CloudWatch Logs and developing security monitoring alerts.
+
+![Amazon CloudWatch console overview](screenshots/14-amazon-cloudwatch-console.png)
+
+*Figure 14: Amazon CloudWatch overview before configuring log monitoring and security alerts.*
+  
