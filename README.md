@@ -89,7 +89,7 @@ Identified seven matching events associated with two IAM identities, demonstrati
 
 Established a starting point for investigating MFA verification events and identifying potential authentication anomalies.
 
-![CloudTrail MFA Event Filter](screenshots/06-cloudtrail-mfa-event-filter.png)
+![CloudTrail MFA Event Filter](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/3eb6d2f60a905788661a7699cece57b6ac43e2c0/Screenshot%202026-10-23%20134116.png)
 
 *Figure 6: AWS CloudTrail Event History displaying seven CheckMfa events across two IAM identities.*
 
