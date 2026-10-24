@@ -200,6 +200,6 @@ Opened Amazon CloudWatch Log Management in the `us-east-1` region to inspect exi
 
 Confirmed that no CloudWatch log groups were present. This established a baseline for creating a dedicated security monitoring log group and configuring log retention.
 
-![CloudWatch log groups review](screenshots/15-cloudwatch-log-groups-review.png)
+![CloudWatch log groups review](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/6bd09a31d924113a9c5912b2738de707b0b75931/Screenshot%202026-10-24%20140213.png)
 
 *Figure 15: CloudWatch Log Management showing zero existing log groups before CloudTrail integration.*
