@@ -103,7 +103,7 @@ Reviewed the IAM identity, authentication timestamp, event source, event categor
 
 Demonstrated how CloudTrail authentication logs support identity security monitoring, MFA verification, and incident investigations.
 
-![CloudTrail MFA JSON Analysis](screenshots/07-cloudtrail-mfa-json-analysis.png)
+![CloudTrail MFA JSON Analysis](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/2d9f3dc97d0e13173755130dd84903cad5a0b7bb/Screenshot%202026-10-23%20134555.png)
 
 *Figure 7: AWS CloudTrail CheckMfa JSON record confirming successful WebAuthn MFA verification.*
 
