@@ -151,7 +151,7 @@ Located 33 compressed `.json.gz` log files in the `us-east-1/2026/10/23/` direct
 
 Verified the log file naming convention, delivery timestamps, and S3 Standard storage class. The bucket also contains a `CloudTrail-Digest/` directory associated with log file validation.
 
-![CloudTrail logs delivered to Amazon S3](screenshots/11-cloudtrail-s3-log-delivery.png)
+![CloudTrail logs delivered to Amazon S3](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/bb957a7b36f7eda3e866fe05b0a1654c8981cbac/Screenshot%202026-10-23%20215143.png)
 
 *Figure 11: Amazon S3 displaying 33 compressed CloudTrail log files delivered to the regional log directory.*
   
