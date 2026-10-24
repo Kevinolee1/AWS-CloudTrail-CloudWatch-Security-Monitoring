@@ -189,7 +189,7 @@ Reviewed the CloudWatch overview and identified the available logging, metrics, 
 
 This establishes the starting point for integrating CloudTrail management events with CloudWatch Logs and developing security monitoring alerts.
 
-![Amazon CloudWatch console overview](screenshots/14-amazon-cloudwatch-console.png)
+![Amazon CloudWatch console overview](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/1ce6b1fbbdc475a0af4a4e2b7e4b23600bb588ab/Screenshot%202026-10-23%20235609.png)
 
 *Figure 14: Amazon CloudWatch overview before configuring log monitoring and security alerts.*
   
