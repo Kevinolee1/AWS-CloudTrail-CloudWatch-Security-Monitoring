@@ -193,3 +193,13 @@ This establishes the starting point for integrating CloudTrail management events
 
 *Figure 14: Amazon CloudWatch overview before configuring log monitoring and security alerts.*
   
+
+### Step 15 — Review CloudWatch Log Groups
+
+Opened Amazon CloudWatch Log Management in the `us-east-1` region to inspect existing log groups before configuring CloudTrail integration.
+
+Confirmed that no CloudWatch log groups were present. This established a baseline for creating a dedicated security monitoring log group and configuring log retention.
+
+![CloudWatch log groups review](screenshots/15-cloudwatch-log-groups-review.png)
+
+*Figure 15: CloudWatch Log Management showing zero existing log groups before CloudTrail integration.*
