@@ -115,7 +115,7 @@ Confirmed that no CloudTrail trails were displayed in the current AWS account an
 
 Identified the need for a dedicated trail to support persistent audit logging, centralized log storage, and future security monitoring integrations.
 
-![CloudTrail Trails Review](screenshots/08-cloudtrail-existing-trails-review.png)
+![CloudTrail Trails Review](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/1797c541834403a586d5b732c9b0a49e44c523ab/Screenshot%202026-10-23%20134708.png)
 
 *Figure 8: AWS CloudTrail Trails dashboard showing no existing trails before security logging configuration.*
 
