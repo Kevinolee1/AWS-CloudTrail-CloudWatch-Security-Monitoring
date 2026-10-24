@@ -177,7 +177,7 @@ Confirmed that the `cloud-lab-admin` IAM user initiated the operation through an
 
 The findings were consistent with the authorized CloudTrail setup activity. No suspicious behavior was established from this event.
 
-![CloudTrail S3 API event investigation](screenshots/13-cloudtrail-s3-api-investigation.png)
+![CloudTrail S3 API event investigation](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/885b95b71b90383c0bebf13a34370a8f725592f9/Screenshot%202026-10-23%20234806.png)
 
 *Figure 13: PowerShell investigation of an S3 CreateBucket event, identifying the IAM user, MFA status, and affected resource.*
   
