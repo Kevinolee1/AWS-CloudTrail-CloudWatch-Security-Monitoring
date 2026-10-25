@@ -236,7 +236,7 @@ Inspected a log stream containing 38 loaded events and reviewed JSON records for
 
 Identified read-only API activity, including `DescribeLogGroups`, `DescribeAlarms`, and `DescribeRegions`, confirming that CloudTrail management events were successfully delivered to CloudWatch Logs.
 
-![CloudWatch CloudTrail log events](screenshots/18-cloudwatch-cloudtrail-log-events.png)
+![CloudWatch CloudTrail log events](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/cebbd5cc50affc37642f7e25e0c4a39c7b7abd9d/Screenshot%202026-10-24%20145149.png)
 
 *Figure 18: CloudWatch Logs displaying CloudTrail management events with IAM identity and API activity details.*
 
