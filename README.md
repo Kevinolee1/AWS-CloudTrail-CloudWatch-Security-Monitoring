@@ -283,3 +283,33 @@ This test validated the CloudWatch alarm and SNS notification integration. End-t
 ![CloudWatch alarm and SNS notification test](screenshots/21-cloudwatch-alarm-sns-notification-test.png)
 
 *Figure 21: CloudWatch alarm showing a temporary ALARM state during a controlled SNS notification test, followed by a return to OK.*
+
+### Step 22 — Verify CloudWatch Alarm History and SNS Delivery
+
+Reviewed the CloudWatch alarm history to validate the controlled security notification test.
+
+Confirmed that `CloudSecurity-FailedConsoleLogin-Alarm` transitioned from OK to ALARM on October 25, 2026, at 22:03:18 UTC.
+
+Verified that CloudWatch successfully executed the configured Amazon SNS notification action at the same timestamp. Confirmed receipt of the notification through the subscribed email inbox.
+
+The alarm subsequently transitioned from ALARM back to OK at 22:05:04 UTC during normal metric evaluation.
+
+These results validate the CloudWatch alarm state transitions, SNS notification action, and recorded alarm history.
+
+![CloudWatch alarm history verification](screenshots/22-cloudwatch-alarm-history-verification.png)
+
+*Figure 22: CloudWatch alarm history showing the ALARM transition, successful SNS action, and return to OK.*
+
+### Step 23 — AWS Resource Cleanup and Cost Management
+
+Performed a controlled cleanup of the AWS security monitoring environment after completing the CloudTrail, CloudWatch, and SNS notification tests.
+
+Stopped CloudTrail logging and removed the lab-specific CloudTrail trail, CloudWatch alarm, metric filter, log group, SNS topic, and S3 logging bucket.
+
+Removed the IAM service role and customer-managed policy used for CloudTrail-to-CloudWatch integration.
+
+Verified the monitoring workflow before cleanup, including the CloudWatch alarm transition, successful SNS notification action, and email delivery.
+
+Attempted to review AWS costs through Billing and Cost Management. Billing access was restricted for the IAM user, so actual charges could not be verified.
+
+The cleanup removed the identified Lab 5 resources to reduce potential ongoing charges.
