@@ -264,6 +264,6 @@ Integrated the alarm with the `CloudSecurity-FailedLogin-Alerts` Amazon SNS topi
 
 Verified that the alarm was successfully created with actions enabled. The initial state was `Insufficient data` because the custom metric had not yet produced sufficient datapoints.
 
-![CloudWatch failed login security alarm](screenshots/20-cloudwatch-failed-login-security-alarm.png)
+![CloudWatch failed login security alarm](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/19496dcad519ab244ca1296de70f1220af18dedc/Screenshot%202026-10-24%20214255.png)
 
 *Figure 20: CloudWatch security alarm monitoring failed AWS Console logins with an SNS notification action.*
