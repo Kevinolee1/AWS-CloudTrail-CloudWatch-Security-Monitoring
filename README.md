@@ -253,3 +253,17 @@ Verified that the metric filter was successfully created and associated with the
 ![CloudWatch failed login metric filter](screenshots/19-cloudwatch-failed-login-metric-filter.png)
 
 *Figure 19: CloudWatch metric filter configured to detect and count failed AWS Console login attempts.*
+
+### Step 20 — Configure Failed Console Login Security Alarm
+
+Created a CloudWatch metric alarm named `CloudSecurity-FailedConsoleLogin-Alarm` to monitor unsuccessful AWS Management Console authentication attempts.
+
+Configured the alarm to monitor the custom `FailedConsoleLoginCount` metric using the Sum statistic and a five-minute evaluation period. The alarm threshold is set to one or more failed login attempts within a single evaluation period.
+
+Integrated the alarm with the `CloudSecurity-FailedLogin-Alerts` Amazon SNS topic and confirmed the email subscription to enable security notifications.
+
+Verified that the alarm was successfully created with actions enabled. The initial state was `Insufficient data` because the custom metric had not yet produced sufficient datapoints.
+
+![CloudWatch failed login security alarm](screenshots/20-cloudwatch-failed-login-security-alarm.png)
+
+*Figure 20: CloudWatch security alarm monitoring failed AWS Console logins with an SNS notification action.*
