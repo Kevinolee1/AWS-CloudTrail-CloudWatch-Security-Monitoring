@@ -250,7 +250,7 @@ Assigned matching events to the custom CloudWatch metric `CloudSecurity/Authenti
 
 Verified that the metric filter was successfully created and associated with the CloudTrail monitoring log group.
 
-![CloudWatch failed login metric filter](screenshots/19-cloudwatch-failed-login-metric-filter.png)
+![CloudWatch failed login metric filter](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/8c47cf8fb77eb33c3a5c9bbca1ceec378d88f825/Screenshot%202026-10-24%20151635.png)
 
 *Figure 19: CloudWatch metric filter configured to detect and count failed AWS Console login attempts.*
 
