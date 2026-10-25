@@ -224,7 +224,7 @@ Created a dedicated IAM service role named `CloudSecurity-CloudTrail-CloudWatch-
 
 Verified that the CloudTrail configuration displays the associated CloudWatch log group and IAM role while S3 log delivery and trail logging remain active.
 
-![CloudTrail CloudWatch integration](screenshots/17-cloudtrail-cloudwatch-integration.png)
+![CloudTrail CloudWatch integration](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/b2f11dc6248eb1d0ea1f3970e495a7a4b23d0b4e/Screenshot%202026-10-24%20144246.png)
 
 *Figure 17: CloudTrail successfully configured with a dedicated CloudWatch Logs group and IAM service role.*
 
