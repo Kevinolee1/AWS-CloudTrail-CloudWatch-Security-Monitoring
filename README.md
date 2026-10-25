@@ -280,7 +280,7 @@ Confirmed that the CloudWatch alarm subsequently returned to the OK state during
 
 This test validated the CloudWatch alarm and SNS notification integration. End-to-end detection of actual failed authentication events was not tested.
 
-![CloudWatch alarm and SNS notification test](screenshots/21-cloudwatch-alarm-sns-notification-test.png)
+![CloudWatch alarm and SNS notification test](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/8025f47959d97329e7b1a8461ec26487c9c6e2fb/Screenshot%202026-10-25%20181253.png)
 
 *Figure 21: CloudWatch alarm showing a temporary ALARM state during a controlled SNS notification test, followed by a return to OK.*
 
