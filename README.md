@@ -296,7 +296,7 @@ The alarm subsequently transitioned from ALARM back to OK at 22:05:04 UTC during
 
 These results validate the CloudWatch alarm state transitions, SNS notification action, and recorded alarm history.
 
-![CloudWatch alarm history verification](screenshots/22-cloudwatch-alarm-history-verification.png)
+![CloudWatch alarm history verification](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/19ca2d68181468405bb301da1d94092f040876d3/Screenshot%202026-10-25%20181436.png)
 
 *Figure 22: CloudWatch alarm history showing the ALARM transition, successful SNS action, and return to OK.*
 
