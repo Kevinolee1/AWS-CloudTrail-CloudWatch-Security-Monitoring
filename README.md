@@ -212,7 +212,7 @@ Configured the Standard log class to support security metric filters and establi
 
 Verified that the log group was successfully created with deletion protection disabled and no metric filters configured.
 
-![CloudWatch security log group](screenshots/16-cloudwatch-security-log-group-created.png)
+![CloudWatch security log group](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/4a3d481de1763a78a9d2b11cccf0578e901e11d0/Screenshot%202026-10-24%20142415.png)
 
 *Figure 16: CloudWatch security monitoring log group successfully created with Standard log class and seven-day retention.*
 
