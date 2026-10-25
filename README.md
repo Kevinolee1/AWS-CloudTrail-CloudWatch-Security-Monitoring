@@ -267,3 +267,19 @@ Verified that the alarm was successfully created with actions enabled. The initi
 ![CloudWatch failed login security alarm](https://github.com/Kevinolee1/AWS-CloudTrail-CloudWatch-Security-Monitoring/blob/19496dcad519ab244ca1296de70f1220af18dedc/Screenshot%202026-10-24%20214255.png)
 
 *Figure 20: CloudWatch security alarm monitoring failed AWS Console logins with an SNS notification action.*
+
+### Step 21 — Test CloudWatch Security Alarm and SNS Notifications
+
+Performed a controlled security alarm test using AWS CloudShell and the AWS CLI.
+
+Used the `aws cloudwatch set-alarm-state` command to temporarily transition the `CloudSecurity-FailedConsoleLogin-Alarm` into the ALARM state without generating an actual failed login.
+
+Verified that Amazon SNS delivered an email notification through the `CloudSecurity-FailedLogin-Alerts` topic to the confirmed email subscription.
+
+Confirmed that the CloudWatch alarm subsequently returned to the OK state during normal metric evaluation.
+
+This test validated the CloudWatch alarm and SNS notification integration. End-to-end detection of actual failed authentication events was not tested.
+
+![CloudWatch alarm and SNS notification test](screenshots/21-cloudwatch-alarm-sns-notification-test.png)
+
+*Figure 21: CloudWatch alarm showing a temporary ALARM state during a controlled SNS notification test, followed by a return to OK.*
